@@ -9,5 +9,5 @@ class GnewsRequestModel(BaseModel):
     @field_validator('rss_or_gnews')
     def check_rss_or_gnews(cls, v):
         if v not in {"rss", "gnews"}:
-            raise ValueError('rss_or_gnews must be either "rss" or "gnews"')
+            raise ValueError('rss_or_gnews must be either "rss" or "gnews  hello"')
         return v
