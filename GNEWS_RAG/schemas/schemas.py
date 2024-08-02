@@ -3,6 +3,7 @@ from pydantic_core.core_schema import FieldValidationInfo
 from typing import Optional
 class GnewsRequestModel(BaseModel):
     query: str
+    hello:str
     rss_or_gnews: str = "rss"
     brand_name: str
     rss_link : Optional[str]=None
