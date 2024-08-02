@@ -7,9 +7,13 @@ class GnewsRequestModel(BaseModel):
     rss_or_gnews: str = "rss"
     brand_name: str
     rss_link : Optional[str]=None
+    "testing stash2"
     @field_validator('rss_or_gnews')
     def check_rss_or_gnews(cls, v):
         if v not in {"rss", "gnews"}:
             raise ValueError('rss_or_gnews must be either "rss" or "gnews bye hello hai hai "')
             
         return v
+    
+    def test_fun():
+        pass
