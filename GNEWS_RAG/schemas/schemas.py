@@ -8,6 +8,7 @@ class GnewsRequestModel(BaseModel):
     brand_name: str
     rss_link : Optional[str]=None
     "testing hash"
+    "testing hasee1"
     @field_validator('rss_or_gnews')
     def check_rss_or_gnews(cls, v):
         if v not in {"rss", "gnews"}:
